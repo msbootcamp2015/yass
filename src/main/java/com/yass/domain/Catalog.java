@@ -1,9 +1,6 @@
 package com.yass.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -13,6 +10,7 @@ public class Catalog {
   private String id;
   private String name;
   @OneToMany
+  @JoinColumn(name = "catalog_id")
   private List<Product> products;
 
   @SuppressWarnings("unused")
