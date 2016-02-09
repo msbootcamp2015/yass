@@ -1,4 +1,4 @@
-package com.yass;
+package com.yass.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
